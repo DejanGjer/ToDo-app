@@ -1,0 +1,136 @@
+:root{
+    --color-primary: #783F8E;
+    --color-primary-light: #9955B4;
+    --color-primary-dark: #5F3271;
+
+    --color-grey-dark: #222;
+    --color-grey-dark-1: #333;
+    --color-grey-dark-2: #777;
+    --color-grey-dark-3: #999;
+
+    --color-grey-light-1: #faf9f9;
+    --color-grey-light-2: #f4f2f2;
+    --color-grey-light-3: #f0eeee;
+    --color-grey-light-4: #ccc;
+
+    --color-blue: #2980b9;
+
+    --color-green-light: #74C69D;
+    --color-green: #52B788;
+    --color-green-dark: #40916C;
+
+    --shadow-dark: 1rem 2rem rgba(#111111, .2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-grey-dark);
+    background-image: linear-gradient(to right bottom, #e8fcea, #77fc80);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+}
+
+.container{
+    width: 50%;
+    margin: 6rem auto;
+    padding: 2rem 6rem;
+    box-shadow: var(--shadow-dark);
+    border: 2px solid var(--color-primary);
+    background-color: var(--color-grey-light-3);
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.container > form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.header{
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--color-primary);
+    color: var(--color-grey-dark-1);
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.container > form > label, .pair > label{
+    font-size: 2.0rem;
+    font-weight: 400;
+    color: var(--color-grey-dark-1);
+    margin-bottom: .5rem;
+}
+
+input[type=text], input[type=date], input[type=password], input[type=email], textarea{
+    padding: .5rem 1rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--color-grey-dark-1);
+    margin-bottom: 1rem;
+}
+
+.pair{
+    display: flex;
+    align-items: center;
+}
+
+.pair > label {
+    margin-bottom: 0;
+    margin-right: 2rem;
+} 
+
+.container > form > input[type=submit]{
+    padding: 2rem 0;
+    margin: 2rem 0;
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--color-grey-dark-1);
+    background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+    border: none;
+    text-transform: uppercase;
+    color: var(--color-grey-light-2);
+    cursor: pointer;
+}
+
+.container > div{
+    display: flex;
+}
+
+.container > div > p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color-grey-dark-1);
+    margin-right: 1rem;
+}
+
+.container > div > a{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
